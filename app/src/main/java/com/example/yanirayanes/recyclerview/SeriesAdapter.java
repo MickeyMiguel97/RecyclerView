@@ -19,7 +19,7 @@ public class SeriesAdapter extends RecyclerView.Adapter<SeriesAdapter.SeriesView
 
     @Override
     public SeriesViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
-        View v = LayoutInflater.from(parent.getContext().inflate(R.layout.activity_cardview,parent,false));
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_cardview,parent,false);
         return (new SeriesViewHolder(v));
     }
 
@@ -40,7 +40,7 @@ public class SeriesAdapter extends RecyclerView.Adapter<SeriesAdapter.SeriesView
         ImageView img;
 
         public SeriesViewHolder(View itemView){
-            super.(itemView);
+            super(itemView);
             card = itemView.findViewById(R.id.card_view);
             name = itemView.findViewById(R.id.name);
             img = itemView.findViewById(R.id.img);
